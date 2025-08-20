@@ -4,7 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 public class CesiumSamplesMetadataPickingMagicLeap : MonoBehaviour
 {
@@ -13,7 +13,7 @@ public class CesiumSamplesMetadataPickingMagicLeap : MonoBehaviour
     public TextMeshProUGUI metadataText;
     public GameObject canvas;
     public InputActionProperty activateButton;
-    public XRRayInteractor rayInteractor;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor;
     public LayerMask layerMask = ~0;
     public bool placeOnBuilding = true;
 

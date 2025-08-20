@@ -1,6 +1,6 @@
 using UnityEngine;
 using CesiumForUnity;
-using UnityEngine.XR.Interaction.Toolkit;
+
 
 public class CesiumSamplesTeleportationArea : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class CesiumSamplesTeleportationArea : MonoBehaviour
         if (tileset != null)
         {
             tileset.OnTileGameObjectCreated += go =>
-                go.AddComponent<TeleportationArea>();
+                go.AddComponent<UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportationArea>();
         }
     }
 }

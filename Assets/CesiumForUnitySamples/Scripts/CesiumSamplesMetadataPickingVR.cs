@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System;
 
-public class MetadataInteractable : XRBaseInteractable
+public class MetadataInteractable : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable
 {
     public TextMeshProUGUI metadataText;
     public GameObject canvas;
@@ -167,7 +167,7 @@ public class CesiumSamplesMetadataPickingVR : MonoBehaviour
     public TextMeshProUGUI metadataText;
     public GameObject canvas;
     public InputActionReference activateButton;
-    public XRRayInteractor rayInteractor;
+    public UnityEngine.XR.Interaction.Toolkit.Interactors.XRRayInteractor rayInteractor;
     void Start()
     {
         if (activateButton != null)
